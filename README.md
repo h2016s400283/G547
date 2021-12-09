@@ -18,15 +18,15 @@ Execution of the Code:
 	The entire process goes like this:
 	We enter the message byte from the user space, by executing the userapp.
 	Based on the input recieved, the corresponding byte is getting displaying in the serial port of our computer.
-		1) Run make.sh
-		2) You are prompted to give input parameter(from 0 to 9)
-		3) On receiving it, the same is reflected in the com port
+	1) Run make.sh
+	2) You are prompted to give input parameter(from 0 to 9)
+	3) On receiving it, the same is reflected in the com port
 
 Extra:  
 	We have written an Arduino sketch that gets the byte data over I2C and transmits it over UART.
 	To ease the compilation process, we are making a shell script file (make.sh) that
-		1)compiles both user and kernel space files.
-		2)inserting the driver into the kernel
-		3)executes userapp
-		4)removes the driver from the Kernel
-		5)prints the tail of kernel log output
+	1)compiles both user and kernel space files.
+	2)inserting the driver into the kernel
+	3)executes userapp
+	4)removes the driver from the Kernel
+	5)prints the tail of kernel log output
