@@ -1,7 +1,8 @@
-# Linux Device Driver to interface Arduino Uno as a slave device to Raspberry Pi 4 over I2C. 
-Arduino UNO acts as I2C to serial converter using UNO. 
-Data is sent to UNO from Raspberry Pi over I2C, and UNO in turn sends it over through UART.
-The control of the driver lies with user space.
+# Linux Device Driver for I2C to UART Converter
+Linux Device Driver to interface Arduino Uno as a slave device to Raspberry Pi 4 over I2C. 
+	Arduino UNO acts as I2C to serial converter using UNO. 
+	Data is sent to UNO from Raspberry Pi over I2C, and UNO in turn sends it over through UART.
+	The control of the driver lies with user space.
 
 Explaining the implementation:
 	Initially after connectiong the UNO with the Pi, we run the command i2cdetect -y 1 to see the address at which the UNO is getting detected. 
